@@ -1,0 +1,11 @@
+int GetNewNum(int n)
+{
+    int iRet = 0;
+    while (n)
+    {
+    	int iTmp = n % 10;
+		iRet += iTmp * iTmp;
+		n /= 10;
+    }
+	return iRet;
+}
